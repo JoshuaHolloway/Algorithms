@@ -3,7 +3,7 @@
 using std::cout;
 using std::endl;
 //---------------------------------------------------------
-void test(int* x, int len)
+void print(int* x, int len)
 {
 	for (int i = 0; i < len; ++i)
 		cout << x[i] << " ";
@@ -19,10 +19,17 @@ void swap(int& x, int& y)
 //---------------------------------------------------------
 void bubble_sort(int* x, int len)
 {
-	for (int i = 0; i < len - 1; ++i)
+	for (int i = 0; i < len; ++i)
 	{
-		// compare current value and neighbor
-		if (x[i] > x[i + 1])
-			swap(x[i], x[i + 1]);
+		for (int j = 0; j < len - i - 1; ++j)
+		{
+			// compare current value and neighbor
+			cout << "x[j]=" << x[j] << " > x[j+1]=" << x[j + 1] << endl;
+			if (x[j] > x[j + 1])
+				swap(x[j], x[j + 1]);
+		}
+		cout << "After pass " << i << endl;
+		print(x, 4);
+		cout << endl;
 	}
 }
