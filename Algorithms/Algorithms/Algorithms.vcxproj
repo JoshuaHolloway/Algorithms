@@ -114,7 +114,9 @@
     <ClCompile Include="src\main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\bubble-sort.h" />
     <ClInclude Include="src\helper.h" />
+    <ClInclude Include="src\selection-sort.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

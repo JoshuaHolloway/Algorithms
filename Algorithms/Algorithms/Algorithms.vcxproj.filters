@@ -20,6 +20,12 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\bubble-sort.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\selection-sort.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="src\helper.h">
       <Filter>Header Files</Filter>
     </ClInclude>
